@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#2e2e2e">
+
+
+    <TextView
+        android:id="@+id/lbl_sensorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre sensor:"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorName_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_sensorName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:textColor="#b6b6b6"/>
+
+
+    <TextView
+        android:id="@+id/lbl_sensorType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo sensor:"
+        android:layout_below="@id/lbl_sensorName_value"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorType_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_sensorType"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_sensorType_value"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="Valor:"
+        android:textSize="18sp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorValue_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_sensorValue"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicacion:"
+        android:layout_below="@id/lbl_sensorValue_value"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorLocation_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_sensorLocation"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha:"
+        android:layout_below="@id/lbl_sensorLocation_value"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorDate_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_sensorDate"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorObservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Observación:"
+        android:layout_below="@id/lbl_sensorDate_value"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#b6b6b6"/>
+
+    <TextView
+        android:id="@+id/lbl_sensorObservation_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lbl_sensorObservation"
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#b6b6b6"/>
+
+    <Button
+        android:id="@+id/btnDiscard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbl_sensorObservation_value"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="45dp"
+        android:background="#dc3545"
+        android:text="descartar"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="Guardar"
+        android:background="#5a595a"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>
