@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     mqttAndroidClient.setBufferOpts(disconnectedBufferOptions);
 
                     try {
-                        mqttAndroidClient.subscribe("sensor/sensores", 2);
+                            mqttAndroidClient.subscribe("testsensor", 2);
                         Toast.makeText(MainActivity.this, "Subscrito a test01", Toast.LENGTH_SHORT).show();
                     } catch (MqttException e) {
                         e.printStackTrace();
